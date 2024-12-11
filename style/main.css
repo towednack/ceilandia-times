@@ -30,10 +30,51 @@ header .userMenu, header .headerMenu {
     width: 70%;
     flex: 2;
 }
-.headerSlogan {
-    margin-top: 0;
+.timesItalic {
+    margin: 0;
     font-size: 15px;
     font-family: 'Times New Roman', serif;
     font-style: italic;
+}
+.headerSlogan {
     color: #390606;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.noticiasSection, .comunidadeSection {
+    flex: 1;
+}
+.noticiasSection header, .comunidadeSection header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.noticiasSection header img {
+    width: 100%;
+}
+.noticiasSection header p {
+    width: max-content;
+}
+
+.middleSeparator {
+    width: 2px;
+    height: 70vh;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #39060677;
+}
+
+.comunidadeSection header img {
+    width: 170%;
+}
+.comunidadeSection header p {
+    width: max-content;
 }
