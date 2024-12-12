@@ -195,13 +195,43 @@ main {
     margin: 0 0 0 12px;
 }
 .postReactions {
-    width: 10%;
+    width: 46px;
+    height: fit-content;
     margin: 0 5px;
+    padding-bottom: 12px;
     border: 1px solid #0000007a;
     background-color: #00000036;
     text-align: center;
 }
 .postReactions img {
-    width: 70%;
+    cursor: pointer;
+    width: 30px;
+    margin: 0 8px;
     margin-top: 12px;
+}
+
+.userPostImage .userPostBody p {
+    max-width: 40%;
+}
+.userPostImage .userSentImage {
+    position: relative;
+    max-width: 250px;
+    height: fit-content;
+    margin-left: 20px;
+    padding: 4px 3px 0 3px;
+    border: 1px solid #390606;
+}
+.userPostImage .userSentImage:before {
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:1;
+    top:2px;
+    left:2px;
+    right:2px;
+    bottom:2px;
+    border:2px solid rgba(255, 255, 255, 0);
+}
+.userPostImage .userSentImage img {
+    width: 100%;
 }
