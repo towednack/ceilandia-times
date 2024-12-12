@@ -21,6 +21,8 @@
 
 /* General */
 body {
+    margin: 0;
+    padding: 0;
     background-image: url("../media/BG2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,9 +67,10 @@ header .userMenu, header .headerMenu {
 
 main {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 4%;
-    width: 55%;
+    width: 50%;
     margin: auto;
     margin-top: 50px;
 }
@@ -92,7 +95,7 @@ main {
     font-family: 'OldNewspaperTypesRegular';
     font-size: 15px;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 .newsPost .imgContainer {
@@ -130,6 +133,14 @@ main {
 .newsPostSmallPicture .imgContainer {
     width: 45%;
     height: fit-content;
+}
+.newsPostSeparator div {
+    width: 70%;
+    height: 2px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background-color: #3906063a;
 }
 
 .middleSeparator div {
@@ -194,7 +205,7 @@ main {
     margin-top: 5px;
 }
 .userPostBody p {
-    max-width: 85%;
+    max-width: 100%;
     margin: 0 0 0 12px;
 }
 .postReactions {
@@ -212,6 +223,7 @@ main {
     width: 70%;
     margin: auto;
     margin-top: 12px;
+    filter: brightness(0.3);
 }
 .userPostContent .userSentImage {
     position: relative;
@@ -220,6 +232,7 @@ main {
     text-align: center;
     margin-top: 10px;
     margin-left: 20px;
+    margin: 10px 0 20px 30px;
     padding: 4px 3px 0 3px;
     border: 1px solid #390606;
 }
@@ -238,6 +251,19 @@ main {
     width: 100%;
 }
 
+.buttonContainer {
+    display: none;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#seeMoreNews, #seeMoreCommunity {
+    margin: auto;
+    font-family: 'OldNewspaperTypesRegular';
+    font-size: 20px;
+    background: none transparent;
+}
+
 /* Responsiveness */
 @media only screen and (max-width: 1200px) {
     header {
@@ -254,5 +280,83 @@ main {
     }
     .postReactions img {
         width: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body > header {
+        display: block;
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+    body > header .userMenu {
+        display: none;
+    }
+    body > header .headerMenu {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-right: -40px;
+    }
+    .headerMiddle {
+        display: block !important;
+        flex: 10;
+        width: 110%;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+    .headerMiddle img {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .newsPostSmallPicture {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsPostSmallPicture > p {
+        max-width: 100%;
+        margin: 0 0 0 15px;
+        text-align: center;
+    }
+    .newsPostSmallPicture .imgContainer {
+        width: 100%;
+        height: fit-content;
+        margin: 15px 0;
+    }
+
+    .middleSeparator div {
+        width: 60%;
+        height: 2px;
+    }
+
+    .comunidadeSection {
+        margin-top: 30px;
+    }
+    .comunidadeSection header img {
+        width: 150%;
+    }
+    .comunidadeSection header p {
+        width: 150%;
+    }
+
+    .postReactions {
+        width: 80%;
+        margin: 0 20px 0 13px;
+    }
+    .postReactions img {
+        margin-top: 17px;
+        margin-bottom: 5px;
+    }
+
+    .buttonContainer {
+        display: block;
     }
 }
