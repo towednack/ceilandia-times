@@ -1,3 +1,4 @@
+/* Font Import */
 @font-face {
     font-family: 'OldNewspaperTypesRegular';
     src: url('../font/oldnewspapertypes-webfont.eot');
@@ -10,8 +11,15 @@
 
 }
 
+/* Global Code */
+.clickableText {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+}
 
-
+/* General */
 body {
     background-image: url("../media/BG.png");
     background-repeat: no-repeat;
@@ -29,6 +37,7 @@ header {
     text-align: center;
 }
 header .userMenu, header .headerMenu {
+    cursor: pointer;
     margin-bottom: 50px;
     flex: 1;
 }
@@ -57,7 +66,7 @@ header .userMenu, header .headerMenu {
 main {
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 4%;
     width: 55%;
     margin: auto;
     margin-top: 50px;
@@ -124,7 +133,7 @@ main {
 
 .middleSeparator {
     width: 2px;
-    height: 70vh;
+    height: 90vh;
     margin: auto;
     border-radius: 2px;
     background-color: #3906063a;
@@ -135,4 +144,64 @@ main {
 }
 .comunidadeSection header p {
     width: max-content;
+}
+.comunidadeSection .orderPosts {
+    margin-top: 25px;
+}
+.orderPosts p {
+    display: inline;
+}
+.orderBySelect {
+    display: inline;
+    border: 1px dotted #390606;
+    background: none transparent;
+    text-align: center;
+}
+
+.userPost {
+    margin-top: 40px;
+}
+
+.userInfo {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.userInfoText p {
+    margin: 0 0 5px 0;
+}
+.userInfoText #userName {
+    font-family: 'OldNewspaperTypesRegular';
+    font-weight: 600;
+}
+.userInfoText #postTime {
+    font-weight: 1000;
+    color: #666666;
+}
+
+.userImage img {
+    width: 60px;
+}
+
+.userPostBody {
+    display: flex;
+    font-family: 'OldNewspaperTypesRegular';
+    font-size: 14px;
+    margin-top: 5px;
+}
+.userPostBody p {
+    max-width: 80%;
+    margin: 0 0 0 12px;
+}
+.postReactions {
+    width: 10%;
+    margin: 0 5px;
+    border: 1px solid #0000007a;
+    background-color: #00000036;
+    text-align: center;
+}
+.postReactions img {
+    width: 70%;
+    margin-top: 12px;
 }

@@ -51,8 +51,37 @@
         <div class="comunidadeSection">
             <header>
                 <img src="media/POSTS DA COMUNIDADE.png" alt="Posts da Comunidade!">
-                <p class="timesItalic">As mensagens enviadas pela comunidade. Envie uma também!</p>
+                <p class="timesItalic">As mensagens enviadas pela comunidade. <span class="clickableText">Envie uma também!</span></p>
             </header>
+
+            <div class="orderPosts">
+                <p class="timesItalic">Ordenar por</p>
+                <select class="orderBySelect timesItalic" name="orderBy" id="orderBy">
+                  <option value="relevancia">relevância</option>
+                  <option value="recentes">recentes</option>
+                  <option value="antigos">antigos</option>
+                </select>
+            </div>
+
+            <div class="userPost">
+                <div class="userInfo">
+                    <div class="userImage">
+                        <img src="media/User Image.png" alt="Entrar no perfil do usuário">
+                    </div>
+                    <div class="userInfoText">
+                        <p id="userName">Marcos Carvalho L.</p>
+                        <p id="postTime">há 1 hora</p>
+                    </div>
+                </div>
+
+                <div class="userPostBody">
+                    <div class="postReactions">
+                        <img src="media/Like.png" alt="Gostei do post">
+                        <img src="media/Comment.png" alt="Comentários do post">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas quam dui, a luctus velit condimentum sed. Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestasa Phasellus quam arcu, bibendum non ipsum!</p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
