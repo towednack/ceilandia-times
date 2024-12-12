@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'OldNewspaperTypesRegular';
+    src: url('../font/oldnewspapertypes-webfont.eot');
+    src: url('../font/oldnewspapertypes-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/oldnewspapertypes-webfont.woff2') format('woff2'),
+        url('../font/oldnewspapertypes-webfont.woff') format('woff'),
+        url('../font/oldnewspapertypes-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 body {
     background-image: url("../media/BG.png");
     background-repeat: no-repeat;
@@ -43,8 +57,8 @@ header .userMenu, header .headerMenu {
 main {
     display: flex;
     justify-content: center;
-    gap: 5%;
-    width: 60%;
+    gap: 2%;
+    width: 55%;
     margin: auto;
     margin-top: 50px;
 }
@@ -64,12 +78,56 @@ main {
     width: max-content;
 }
 
+.newsPost {
+    font-family: 'OldNewspaperTypesRegular';
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.newsPost .imgContainer {
+    position: relative;
+    padding: 4px 3px 0 3px;
+    border: 1px solid #390606;
+}
+.newsPost .imgContainer:before {
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:1;
+    top:2px;
+    left:2px;
+    right:2px;
+    bottom:2px;
+    border:2px solid rgba(255, 255, 255, 0);
+}
+.newsPost .imgContainer p {
+    margin: 0 0 5px 0;
+}
+
+.newsPostBigPicture img, .newsPostSmallPicture img {
+    width: 100%;
+}
+.newsPostSmallPicture {
+    display: flex;
+    flex-direction: row;
+}
+.newsPostSmallPicture > p {
+    max-width: 55%;
+    margin: 0 0 0 15px;
+    text-align: left;
+}
+.newsPostSmallPicture .imgContainer {
+    width: 45%;
+    height: fit-content;
+}
+
 .middleSeparator {
     width: 2px;
     height: 70vh;
     margin: auto;
     border-radius: 2px;
-    background-color: #39060677;
+    background-color: #3906063a;
 }
 
 .comunidadeSection header img {
