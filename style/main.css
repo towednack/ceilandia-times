@@ -21,7 +21,7 @@
 
 /* General */
 body {
-    background-image: url("../media/BG.png");
+    background-image: url("../media/BG2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -79,6 +79,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 60%;
 }
 .noticiasSection header img {
     width: 100%;
@@ -131,7 +132,7 @@ main {
     height: fit-content;
 }
 
-.middleSeparator {
+.middleSeparator div {
     width: 2px;
     height: 90vh;
     margin: auto;
@@ -159,17 +160,18 @@ main {
 }
 
 .userPost {
+    width: 100%;
     margin-top: 40px;
 }
 
 .userInfo {
     display: flex;
-    gap: 10px;
+    gap: 0px;
     margin-top: 20px;
 }
 
 .userInfoText p {
-    margin: 0 0 5px 0;
+    margin: 0 0 5px -15px;
 }
 .userInfoText #userName {
     font-family: 'OldNewspaperTypesRegular';
@@ -181,7 +183,8 @@ main {
 }
 
 .userImage img {
-    width: 60px;
+    width: 65%;
+    border: 2px solid #0000009a;
 }
 
 .userPostBody {
@@ -191,47 +194,65 @@ main {
     margin-top: 5px;
 }
 .userPostBody p {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 0 0 12px;
 }
 .postReactions {
-    width: 46px;
+    width: 50%;
     height: fit-content;
-    margin: 0 5px;
+    margin: 0 16px 0 9px;
     padding-bottom: 12px;
     border: 1px solid #0000007a;
     background-color: #00000036;
     text-align: center;
 }
 .postReactions img {
+    display: block;
     cursor: pointer;
-    width: 30px;
-    margin: 0 8px;
+    width: 70%;
+    margin: auto;
     margin-top: 12px;
 }
-
-.userPostImage .userPostBody p {
-    max-width: 40%;
-}
-.userPostImage .userSentImage {
+.userPostContent .userSentImage {
     position: relative;
-    max-width: 250px;
+    width: 80%;
     height: fit-content;
+    text-align: center;
+    margin-top: 10px;
     margin-left: 20px;
     padding: 4px 3px 0 3px;
     border: 1px solid #390606;
 }
-.userPostImage .userSentImage:before {
-    content:"";
-    display:block;
-    position:absolute;
-    z-index:1;
-    top:2px;
-    left:2px;
-    right:2px;
-    bottom:2px;
-    border:2px solid rgba(255, 255, 255, 0);
+.userPostContent .userSentImage:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px solid rgba(255, 255, 255, 0);
 }
-.userPostImage .userSentImage img {
+.userPostContent .userSentImage img {
     width: 100%;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1200px) {
+    header {
+        width: 80%;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    .postReactions {
+        width: 55%;
+        margin: 0 10px;
+    }
+    .postReactions img {
+        width: 25px;
+    }
 }
