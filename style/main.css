@@ -535,3 +535,6 @@ main {
 .comunidadeDedicatedHeader .orderPosts {
     margin-bottom: 0;
 }
+.comunidadeDedicatedHeader .buttonContainer {
+    margin: 50px 0;
+}
