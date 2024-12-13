@@ -30,7 +30,10 @@
             </header>
 
             <div class="newsPost newsPostBigPicture">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliti Sed egestas quam dui, a luctus velit condimentum sedi Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+                <div>
+                    <h3>Centro da cidade</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliti Sed egestas quam dui, a luctus velit condimentum sedi Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+                </div>
                 <div class="imgContainer">
                     <img src="media/News Image 1.png" alt="Uma imagem do centro de Ceilândia.">
                     <p>Foto na área central da cidade de Ceilândia.</p>
@@ -41,16 +44,19 @@
                 <div></div>
             </div>
 
-            <div class="newsPost newsPostSmallPicture">
+            <div class="newsPost newsPostBigPicture">
+                <div>
+                    <h3>Casa do Cantador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas quam dlii, a luctus velit condimentum ged. Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellug quam arcu, bibendum non ipsum.</p>
+                </div>
                 <div class="imgContainer">
                     <img src="media/News Image 2.png" alt="Uma imagem do centro de Ceilândia.">
                     <p>Casa do Cantador, em Ceilândia.</p>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas quam dlii, a luctus velit condimentum ged. Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellug quam arcu, bibendum non ipsum.</p>
             </div>
 
             <div class="buttonContainer">
-                <button id="seeMoreNews">Ver mais</button>
+                <button id="seeMoreNews">Ver mais notícias</button>
             </div>
         </div>
 
@@ -65,11 +71,18 @@
             </header>
 
             <div class="orderPosts">
-                <p class="timesItalic">Ordenar por</p>
+                <p class="timesItalic">Filtrar posts por</p>
                 <select class="orderBySelect timesItalic" name="orderBy" id="orderBy">
                   <option value="relevancia">relevância</option>
                   <option value="recentes">recentes</option>
                   <option value="antigos">antigos</option>
+                </select>
+                <p class="timesItalic">e mostrar</p>
+                <select class="orderBySelect timesItalic" name="postTagFilter" id="postTagFilter">
+                    <option value="todos">todos os tipos de post</option>
+                    <option value="comercio">posts sobre comércio</option>
+                    <option value="escola">posts sobre escolas</option>
+                    <option value="governo">posts relacionados ao governo</option>
                 </select>
             </div>
 
@@ -89,7 +102,10 @@
                         <img src="media/Like.png" alt="Gostei do post">
                         <img src="media/Comment.png" alt="Comentários do post">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas quam dui, a luctus velit condimentum sed. Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestasa Phasellus quam arcu, bibendum non ipsum!</p>
+                    <div>
+                        <h3>Vendo hambúrgueres a menos de R$30,00!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas quam dui, a luctus velit condimentum sed. Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestasa Phasellus quam arcu, bibendum non ipsum!</p>
+                    </div>
                 </div>
             </div>
 
@@ -110,6 +126,7 @@
                         <img src="media/Comment.png" alt="Comentários do post">
                     </div>
                     <div class="userPostContent">
+                        <h3>Problemas na minha rua...</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas quam dui, a luctus velit condimentum sed. Maecenas eu dignissim tortor, tempus ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestasa Phasellus quam arcu, bibendum non ipsum!</p>
                         <div class="userSentImage">
                             <img src="media/User Sent Image.png" alt="Imagem enviada por usuário.">
@@ -120,7 +137,7 @@
             </div>
 
             <div class="buttonContainer">
-                <button id="seeMoreCommunity">Ver mais</button>
+                <button id="seeMoreCommunity">Ver mais posts</button>
             </div>
         </div>
     </main>
