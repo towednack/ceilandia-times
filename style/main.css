@@ -222,7 +222,7 @@ main {
     background-color: #00000036;
     text-align: center;
 }
-.postReactions img {
+.postReactions > img {
     display: block;
     cursor: pointer;
     width: 70%;
@@ -287,6 +287,55 @@ main {
     background: none transparent;
 }
 
+/* Popup Code */
+.commentsWindow {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    margin: auto;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+    background-color: #b5a99b;
+}
+.commentsWindow h3 {
+    margin: 15px 0;
+}
+.closeCommentsWindow {
+    float: right;
+    width: 20px;
+    margin: 20px;
+    filter: opacity(0.6);
+}
+.commentBlock {
+    margin-bottom: 40px;
+}
+.userInfoComment {
+    width: 80%;
+}
+.userInfoComment .userImage {
+    width: 10%;
+    margin-left: 20px;
+}
+.userInfoComment .userImage img {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #0000009a;
+}
+.commentBlock .postReactions {
+    width: 4%;
+    margin: 0 20px 0 27px;
+    padding: 0 7px;
+}
+.commentBlock .postReactions img {
+    width: 180% !important;
+    margin: 5px -3px;
+}
+.commentBlock .userPostBody p {
+    margin: 0 0 0 -10px !important;
+}
+
 /* Responsiveness */
 @media only screen and (max-width: 1200px) {
     header {
@@ -301,7 +350,7 @@ main {
         width: 55%;
         margin: 0 10px;
     }
-    .postReactions img {
+    .postReactions > img {
         width: 25px;
     }
 }
@@ -383,7 +432,7 @@ main {
         margin: 0 20px 0 13px;
         padding: 0 7px;
     }
-    .postReactions img {
+    .postReactions > img {
         margin-top: 17px;
         margin-bottom: 5px;
     }
