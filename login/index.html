@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceilândia Times - Notícias</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        
+        <div class="headerMenu">
+            <img src="../media/Hamburger Menu.png" alt="Abrir menu do site">
+        </div>
+        <div class="headerMiddle">
+            <img src="../media/Header.png" alt="Cabeçalho da página">
+            <p class="timesItalic headerSlogan">O jornal digital dos ceilandenses!</p>
+        </div>
+        <div class="userMenu">
+            <img src="../media/User Top.png" alt="Abrir menu do usuário">
+        </div>
+
+    </header>
+
+    <!-- MOBILE CODE -->
+    <main id="mobileMain">
+        <div class="chooseLoginRegister">
+            <p>O que você gostaria de fazer?</p>
+            <br>
+            <button onclick="chooseLoginRegisterFunc(1)">ENTRAR</button>
+            <br>
+            <button onclick="chooseLoginRegisterFunc(2)">REGISTRAR</button>
+        </div>
+    </main>
+    <!-- DESKTOP CODE -->
+    <div class="formMainLabels">
+        <p id="formMainLabelRegister">Registrar</p>
+        <p id="formMainLabelLogin">Entrar</p>
+    </div>
+    <main id="desktopMain">
+        <div class="container-forms">
+
+            <div id="forms-cadastro">
+
+            
+                <form id="registerForm" action="#" method="POST">
+
+                    <!-- nome para cadastro -->
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="username" id="name" placeholder="Ex.: João da Silva" required>
+                    </div>
+
+                    <!-- email para cadastro -->
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Ex.: joao@gmail.com" required>
+                    </div>
+                    
+                    <!-- senha para cadastro -->
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="password" id="senha1" placeholder="•••••" required>
+                        <img src="../media/closedEyeBlack.png" id="passwordShowHideButton1" onclick="passwordShowHide(1)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpass">Repetir a senha:</label>
+                        <input type="password" name="cpass" placeholder="•••••" required>
+                    </div>
+                </form>
+                
+                <div class="btn">
+                    <button class="submit" form="registerForm" type="submit" name="register" value="Signup">Registrar</button>
+                </div>
+
+            </div>
+            
+
+            <div id="formDivisor"></div>
+
+            <div id="forms-login">
+
+                
+                <form id="loginForm" action="#" method="POST">
+                    <!-- email para cadastro -->
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Ex.: joao@gmail.com">
+                    </div>
+
+                    <!-- senha para cadastro -->
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="password" id="senha2" placeholder="•••••" required>
+                        <img src="../media/closedEyeBlack.png" id="passwordShowHideButton2" onclick="passwordShowHide(2)">
+                    </div>
+
+                    <!-- esqueceu a senha -->
+                    <h2 class="esqueceu-senha"><a href="#" onclick="forgotPassword('open'); return false;">Esqueceu a senha?</a></h2>
+
+                </form>
+                <div class="btn2">
+                    <button class="submit" form="loginForm" type="submit" name="login" id="submit" value="Login">Entrar</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

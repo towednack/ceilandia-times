@@ -543,3 +543,201 @@ main {
 .comunidadeDedicatedHeader .buttonContainer {
     margin: 50px 0;
 }
+
+/* Login Code */
+#mobileMain {
+    display: none;
+}
+#desktopMain {
+    margin-top: 20px;
+}
+#desktopMain * {
+    font-family: 'OldNewspaperTypesRegular';
+}
+
+#forms-cadastro,
+#forms-login {
+    position: relative;
+    width: 485px;
+    height: 475px;
+    background-color: none transparent;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.formMainLabels {
+    display: flex;
+    width: 1130px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 90px;
+}
+.formMainLabels p {
+    flex: 1;
+    font-size: 30px;
+    font-family: 'OldNewspaperTypesRegular';
+    color: #522624;
+}
+
+.container-forms {
+    height: 450px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 60px !important;
+}
+
+#formDivisor {
+    width: 2px;
+    height: 30vh;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #3906063a;
+}
+
+form {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 25px !important;
+}
+.form-group {
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    width: 340px;
+    height: 40px;
+    margin: 0 8px;
+    border-radius: 12px;
+    border: none !important;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.nameBlock {
+    position: relative;
+}
+.nameBlock p {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+input[type=password], #senha1, #senha2 {
+    display: inline;
+    max-width: 273px;
+}
+#passwordShowHideButton1, #passwordShowHideButton2 {
+    display: inline;
+    float: right;
+    width: 33px;
+}
+button {
+    width: 145px;
+    height: 49px;
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center !important;
+    background-color: #522624;
+    color: #fff;
+    border: none;
+}
+
+.esqueceu-senha{
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center !important;
+}
+a {
+    text-decoration: none !important;
+    padding: 5px;
+    border-radius: 12px;
+    color: #fff !important;
+    background-color: #52262493
+}
+
+.btn, .btn2 {
+    position: absolute;
+    bottom: 40px;
+}
+.btn2 {
+    display: flex !important;
+    justify-content: center !important;
+}
+.btn {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+label {
+    width: 60px;
+    margin-right: -5px;
+    color: #000 !important;
+}
+
+.eye {
+    width: 35px;
+}
+
+@media only screen and (max-width: 1250px) {
+    body {
+        text-align: center;
+    }
+    #desktopMain {
+        display: none;
+    }
+    #mobileMain {
+        display: inline-block;
+        margin: auto;
+        margin-top: 50px;
+        width: 50%;
+        text-align: center;
+    }
+    .chooseLoginRegister {
+        display: inline-block;
+        width: 99%;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 8px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        border-radius: 0 0 30px 30px;
+        background-color: #171E38;
+    }
+    .chooseLoginRegister p {
+        margin: 50px 0 20px 0;
+        font-size: 25px;
+        color: #fff;
+    }
+    .chooseLoginRegister button {
+        display: block;
+        width: 145px;
+        height: 49px;
+        margin: 5px auto;
+        border-radius: 4px;
+        font-size: 22px;
+        text-align: center !important;
+        background-color: #737DA0;
+        color: white;
+        border: none;
+    }
+}
