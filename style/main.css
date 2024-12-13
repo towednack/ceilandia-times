@@ -145,7 +145,7 @@ main {
 
 .middleSeparator div {
     width: 2px;
-    height: 90vh;
+    height: 120vh;
     margin: auto;
     border-radius: 2px;
     background-color: #3906063a;
@@ -255,13 +255,32 @@ main {
 .userPostContent .userSentImage img {
     width: 100%;
 }
+.userPostTags {
+    float: right;
+}
+.userPostTags span {
+    margin: 5px;
+    padding: 3px;
+    color: #fff;
+    background-color: #0000009a;
+}
+#governoTag {
+    background-color: #a5810b88;
+}
+#comercioTag {
+    background-color: #12721288;
+}
+#escolasTag {
+    background-color: #1a629c88;
+}
+
 
 .buttonContainer {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
 }
-#seeMoreNews, #seeMoreCommunity {
+#seeMoreNews, #seeMoreEvents, #seeMoreCommunity {
     margin: auto;
     font-family: 'OldNewspaperTypesRegular';
     font-size: 16px;
