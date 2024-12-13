@@ -650,7 +650,7 @@ input[type=password], #senha1, #senha2 {
     float: right;
     width: 33px;
 }
-button {
+.loginButton {
     width: 145px;
     height: 49px;
     border-radius: 4px;

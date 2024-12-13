@@ -15,7 +15,7 @@
             <img src="../media/Hamburger Menu.png" alt="Abrir menu do site">
         </div>
         <div class="headerMiddle">
-            <img src="../media/Header.png" alt="Cabeçalho da página">
+            <img src="../media/Header.png" alt="Cabeçalho da página" onclick="location.href='../'">
             <p class="timesItalic headerSlogan">O jornal digital dos ceilandenses!</p>
         </div>
         <div class="userMenu">
@@ -29,9 +29,9 @@
         <div class="chooseLoginRegister">
             <p>O que você gostaria de fazer?</p>
             <br>
-            <button onclick="chooseLoginRegisterFunc(1)">ENTRAR</button>
+            <button class="loginButton" onclick="chooseLoginRegisterFunc(1)">ENTRAR</button>
             <br>
-            <button onclick="chooseLoginRegisterFunc(2)">REGISTRAR</button>
+            <button class="loginButton" onclick="chooseLoginRegisterFunc(2)">REGISTRAR</button>
         </div>
     </main>
     <!-- DESKTOP CODE -->
@@ -73,7 +73,7 @@
                 </form>
                 
                 <div class="btn">
-                    <button class="submit" form="registerForm" type="submit" name="register" value="Signup">Registrar</button>
+                    <button class="submit loginButton" form="registerForm" type="submit" name="register" value="Signup">Registrar</button>
                 </div>
 
             </div>
@@ -103,7 +103,7 @@
 
                 </form>
                 <div class="btn2">
-                    <button class="submit" form="loginForm" type="submit" name="login" id="submit" value="Login">Entrar</button>
+                    <button class="submit loginButton" form="loginForm" type="submit" name="login" id="submit" value="Login">Entrar</button>
                 </div>
 
             </div>
