@@ -257,9 +257,9 @@ main {
 }
 .userPostTags {
     float: right;
+    margin: 10px;
 }
 .userPostTags span {
-    margin: 5px;
     padding: 3px;
     color: #fff;
     background-color: #0000009a;
@@ -313,6 +313,7 @@ main {
 }
 .userInfoComment {
     width: 80%;
+    text-align: left;
 }
 .userInfoComment .userImage {
     width: 10%;
@@ -323,6 +324,7 @@ main {
     margin: 0;
     border: 1px solid #0000009a;
 }
+
 .commentBlock .postReactions {
     width: 4%;
     margin: 0 20px 0 27px;
@@ -436,4 +438,31 @@ main {
         margin-top: 17px;
         margin-bottom: 5px;
     }
+
+    .commentsWindow {
+        width: 80%;
+    }
+    .commentsWindow .postReactions img {
+        width: 120% !important;
+    }
+}
+
+/* Page Specific Content */
+/* posts-da-comunidade/index.html */
+.postsDaComunidadeMain {
+    width: 50% !important;
+    gap: 100px;
+    margin-top: 0;
+}
+.comunidadeDedicatedHeader {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+}
+.comunidadeDedicatedHeader header {
+    margin-bottom: 50px;
+}
+.comunidadeDedicatedHeader .orderPosts {
+    margin-bottom: 0;
 }
