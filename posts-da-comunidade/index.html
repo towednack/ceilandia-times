@@ -26,7 +26,7 @@
     <div class="comunidadeSection comunidadeDedicatedHeader">
         <header>
             <img src="../media/POSTS DA COMUNIDADE.png" alt="Posts da Comunidade!">
-            <p class="timesItalic">As mensagens enviadas pela comunidade. <span class="clickableText">Envie uma também!</span></p>
+            <p class="timesItalic">As mensagens enviadas pela comunidade. <a class="clickableText" href="#" onclick="sendCommunityPost('open');return false;">Envie uma também!</a></p>
         </header>
         <div class="orderPosts">
             <p class="timesItalic">Filtrar posts por</p>
@@ -333,6 +333,40 @@
     <div class="comunidadeSection comunidadeDedicatedHeader">
         <div class="buttonContainer">
             <button id="seeMoreCommunity">Ver mais posts</button>
+        </div>
+    </div>
+
+    <!-- Popup Code -->
+    <div id="popupContainer">
+        <div class="popupContainerRelativeReset">
+            <div id="sendCommunityPostBlock">
+                <img class="closeSendCommunityPostBlock" src="../media/X.png" alt="Fechar janela" onclick="sendCommunityPost('close')">
+                <br>
+                <h2>Enviar post para a comunidade</h2>
+                <form action="" method="post">
+                    <label for="communityPostTitle">Título:</label>
+                    <br>
+                    <input type="text" name="communityPostTitle" placeholder="Título do post">
+                    <br>
+                    <label for="communityPostText">Texto:</label>
+                    <br>
+                    <textarea type="text" name="communityPostText" placeholder="Texto do post" rows="4" cols="50"></textarea>
+                    <br>
+                    <label for="communityPostImage">Enviar imagem (opcional):</label>
+                    <br>
+                    <input type="file" name="communityPostImage" value="Enviar imagem" accept="image/*">
+                    <br>
+                    <label for="communityPostTag">Qual é o tópico do seu post?</label>
+                    <select name="communityPostTag" id="communityPostTag">
+                      <option value="geral">Geral</option>
+                      <option value="comercio">Comércio</option>
+                      <option value="escola">Escola</option>
+                      <option value="governo">Governo</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Enviar post">
+                </form>
+            </div>
         </div>
     </div>
 </body>
