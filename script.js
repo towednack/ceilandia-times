@@ -25,3 +25,37 @@ function sendCommunityPost(openOrClose) {
     }
     
 }
+
+function chooseLoginRegisterFunc(loginRegister) {
+    if (loginRegister == 1) {
+        document.getElementById("forms-cadastro").style.display = "none";
+        document.getElementById("formMainLabelRegister").style.display = "none";
+    }
+    else if (loginRegister == 2) {
+        document.getElementById("forms-login").style.display = "none";
+        document.getElementById("formMainLabelLogin").style.display = "none";
+    }
+    
+    document.getElementById("desktopMain").style.display = "block";
+    document.getElementById("formDivisor").style.display = "none";  // General, valid for any of the options. //
+    document.getElementById("mobileMain").style.display = "none";
+}
+
+function passwordShowHide(passwordShowHideButtonNumber) {
+    var passwordShowHideElementID = document.getElementById("senha" + passwordShowHideButtonNumber)
+    var currentPasswordShowHidePosition = document.getElementById("passwordShowHideButton" + passwordShowHideButtonNumber).src
+
+    if (currentPasswordShowHidePosition.includes("openEye")) {
+        document.getElementById("passwordShowHideButton" + passwordShowHideButtonNumber).src = "../media/closedEyeBlack.png";
+    }
+    else {
+        document.getElementById("passwordShowHideButton" + passwordShowHideButtonNumber).src = "../media/openEyeBlack.png";
+    }
+
+    if (passwordShowHideElementID.type === "password") {
+        passwordShowHideElementID.type = "text";
+    }
+    else {
+        passwordShowHideElementID.type = "password";
+    }
+}
