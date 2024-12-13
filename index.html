@@ -77,7 +77,7 @@
         <div class="comunidadeSection">
             <header>
                 <img src="media/POSTS DA COMUNIDADE.png" alt="Posts da Comunidade!" onclick="location.href='/posts-da-comunidade'">
-                <p class="timesItalic">As mensagens enviadas pela comunidade. <span class="clickableText">Envie uma também!</span></p>
+                <p class="timesItalic">As mensagens enviadas pela comunidade. <a class="clickableText" href="#" onclick="sendCommunityPost('open');return false;">Envie uma também!</a></p>
             </header>
 
             <div class="orderPosts">
@@ -242,5 +242,31 @@
             </div>
         </div>
     </main>
+
+    <!-- Popup Code -->
+    <div id="popupContainer">
+        <div class="popupContainerRelativeReset">
+            <div id="sendCommunityPostBlock">
+                <img class="closeSendCommunityPostBlock" src="media/X.png" alt="Fechar janela" onclick="sendCommunityPost('close')">
+                <br>
+                <h2>Enviar post para a comunidade</h2>
+                <form action="" method="post">
+                    <label for="communityPostTitle">Título:</label>
+                    <br>
+                    <input type="text" name="communityPostTitle" placeholder="Título do post">
+                    <br>
+                    <label for="communityPostText">Texto:</label>
+                    <br>
+                    <textarea type="text" name="communityPostText" placeholder="Texto do post" rows="4" cols="50"></textarea>
+                    <br>
+                    <label for="communityPostImage">Enviar imagem (opcional):</label>
+                    <br>
+                    <input type="file" name="communityPostImage" value="Enviar imagem">
+                    <br>
+                    <input type="submit" value="Enviar post">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

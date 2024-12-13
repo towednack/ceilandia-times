@@ -13,10 +13,10 @@
 
 /* Global Code */
 .clickableText {
-    cursor: pointer;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-underline-offset: 3px;
+    color: #000;
 }
 
 /* General */
@@ -445,6 +445,75 @@ main {
     .commentsWindow .postReactions img {
         width: 120% !important;
     }
+}
+
+/* Popup Code */
+#popupContainer {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.popupContainerRelativeReset {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#sendCommunityPostBlock {
+    display: none;
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0 50px 20px;
+    font-family: 'OldNewspaperTypesRegular';
+    text-align: center;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+    background-color: #b5a99b;
+}
+.closeSendCommunityPostBlock {
+    display: block;
+    float: right;
+    width: 20px;
+    margin: 20px;
+    filter: opacity(0.6);
+}
+
+#sendCommunityPostBlock h2 {
+    margin-top: 50px;
+}
+#sendCommunityPostBlock form label {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 15px;
+}
+#sendCommunityPostBlock form input, #sendCommunityPostBlock form textarea {
+    width: 70%;
+    font-family: 'OldNewspaperTypesRegular';
+    font-size: 18px;
+    text-align: center;
+}
+#sendCommunityPostBlock form input[name=communityPostText] {
+    height: 200px;
+}
+#sendCommunityPostBlock form input[type=file] {
+    display: inline-block;
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+#sendCommunityPostBlock form input[type=submit] {
+    display: inline-block;
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 /* Page Specific Content */
