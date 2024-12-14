@@ -370,6 +370,21 @@ main {
     margin: 0 0 0 -10px !important;
 }
 
+.addComment {
+    display: inline;
+    width: 60%;
+    font-family: 'OldNewspaperTypesRegular';
+    margin-right: 0;
+
+}
+.addCommentSend {
+    width: fit-content;
+    float: right;
+    font-family: 'OldNewspaperTypesRegular';
+    margin-right: 5%;
+    margin-left: 0;
+}
+
 /* Responsiveness */
 @media only screen and (max-width: 1200px) {
     header {
