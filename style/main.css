@@ -280,7 +280,7 @@ main {
     margin-bottom: 20px;
     text-align: center;
 }
-#seeMoreNews, #seeMoreEvents, #seeMoreCommunity {
+.buttonContainer button, .denunciaButton {
     margin: auto;
     font-family: 'OldNewspaperTypesRegular';
     font-size: 16px;
@@ -549,6 +549,18 @@ main {
 }
 .historiasSection header img {
     width: 100% !important;
+}
+.denunciaButtonContainer {
+    display: inline-block;
+    width: 95%;
+    margin: 20px;
+}
+.denunciaButton {
+    padding: 5px;
+    border: 2px outset buttonborder;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
 }
 
 /* Login Code */
