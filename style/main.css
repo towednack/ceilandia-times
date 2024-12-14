@@ -362,6 +362,7 @@ main {
         display: block;
         width: 90%;
         margin: auto;
+        margin-left: 40px !important;
         flex-direction: column;
     }
     body > header .userMenu {
@@ -388,10 +389,11 @@ main {
         font-size: 20px;
     }
 
-    main {
+    #main {
         width: 100%;
         flex-direction: column;
         gap: 30px;
+        margin-left: 20px !important;
         padding: 20px;
     }
 
@@ -444,6 +446,25 @@ main {
     }
     .commentsWindow .postReactions img {
         width: 120% !important;
+    }
+
+    .comunidadeDedicatedHeader {
+        width: 90% !important;
+    }
+    .comunidadeDedicatedHeader .timesItalic {
+        font-size: 15px !important;
+    }
+    .postsDaComunidadeMain {
+        width: 100% !important;
+        gap: 0 !important;
+        margin: 0;
+        margin-left: -20px;
+    }
+    .postsDaComunidadeMain .comunidadeSection {
+        margin-top: 0 !important;
+    }
+    .postsDaComunidadeMain .userPostBody {
+        text-align: left;
     }
 }
 
@@ -524,7 +545,7 @@ main {
 /* Page Specific Content */
 /* posts-da-comunidade/index.html */
 .postsDaComunidadeMain {
-    width: 50% !important;
+    width: 50%;
     gap: 100px;
     margin-top: 0;
 }
@@ -622,7 +643,7 @@ main {
     background-color: #3906063a;
 }
 
-form {
+#registerForm, #loginForm {
     position: absolute;
     top: 50px;
     display: flex;
@@ -638,7 +659,7 @@ form {
     gap: 10px;
 }
 
-input {
+.inputLogin {
     width: 340px;
     height: 40px;
     margin: 0 8px;
@@ -707,7 +728,7 @@ input[type=password], #senha1, #senha2 {
     justify-content: center !important;
 }
 
-label {
+.labelLogin {
     width: 60px;
     margin-right: -5px;
     color: #000 !important;

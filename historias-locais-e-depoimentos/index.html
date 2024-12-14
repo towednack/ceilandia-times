@@ -27,7 +27,7 @@
         <div class="historiasSection comunidadeSection">
             <header>
                 <img src="../media/HISTORIAS LOCAIS E DEPOIMENTOS.png" alt="Histórias Locais e Depoimentos">
-                <p class="timesItalic">Histórias interessantes que aconteceram aqui, na nossa cidade.</p>
+                <p class="timesItalic">Histórias interessantes que aconteceram aqui, na nossa cidade. <a class="clickableText" href="#" onclick="sendCommunityPost('open');return false;">Envie uma também!</a></p>
             </header>
         </div>
     </main>
@@ -307,6 +307,40 @@
     </main>
     <div class="buttonContainer denunciaButtonContainer">
         <a class="denunciaButton" href="https://www.gov.br/cgu/pt-br/centrais-de-conteudo/campanhas/integridade-publica/denuncias">Denunciar problemas de estrutura</a>
+    </div>
+
+    <!-- Popup Code -->
+    <div id="popupContainer">
+        <div class="popupContainerRelativeReset">
+            <div id="sendCommunityPostBlock">
+                <img class="closeSendCommunityPostBlock" src="../media/X.png" alt="Fechar janela" onclick="sendCommunityPost('close')">
+                <br>
+                <h2>Enviar post para a comunidade</h2>
+                <form action="" method="post">
+                    <label for="communityPostTitle">Título:</label>
+                    <br>
+                    <input type="text" name="communityPostTitle" placeholder="Título do post">
+                    <br>
+                    <label for="communityPostText">Texto:</label>
+                    <br>
+                    <textarea type="text" name="communityPostText" placeholder="Texto do post" rows="4" cols="50"></textarea>
+                    <br>
+                    <label for="communityPostImage">Enviar imagem (opcional):</label>
+                    <br>
+                    <input type="file" name="communityPostImage" value="Enviar imagem" accept="image/*">
+                    <br>
+                    <label for="communityPostTag">Qual é o tópico do seu post?</label>
+                    <select name="communityPostTag" id="communityPostTag">
+                      <option value="geral">Geral</option>
+                      <option value="comercio">Comércio</option>
+                      <option value="escola">Escola</option>
+                      <option value="governo">Governo</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Enviar post">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
