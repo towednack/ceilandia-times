@@ -795,6 +795,8 @@ input[type=password], #senha1, #senha2 {
         flex-direction: row;
         border-radius: 0 0 30px 30px;
         background-color: none transparent;
+        border: 1px solid #000;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
     }
     .chooseLoginRegister p {
         margin: 50px 0 20px 0;
