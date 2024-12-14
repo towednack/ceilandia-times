@@ -23,7 +23,7 @@
 
     </header>
     
-    <main>
+    <main id="main">
         <div class="noticiasSection">
             <header>
                 <img src="../media/EVENTOS.png" alt="Eventos">
@@ -57,7 +57,7 @@
             <div id="sendCommunityPostBlock">
                 <img class="closeSendCommunityPostBlock" src="../media/X.png" alt="Fechar janela" onclick="sendCommunityPost('close')">
                 <br>
-                <h2>Enviar post para a comunidade</h2>
+                <h2>Enviar evento para a comunidade</h2>
                 <form action="" method="post">
                     <label for="communityPostTitle">Título:</label>
                     <br>
@@ -71,12 +71,13 @@
                     <br>
                     <input type="file" name="communityPostImage" value="Enviar imagem" accept="image/*">
                     <br>
-                    <label for="communityPostTag">Qual é o tópico do seu post?</label>
+                    <label for="communityPostTag">Qual é o tipo deste evento?</label>
                     <select name="communityPostTag" id="communityPostTag">
                       <option value="geral">Geral</option>
-                      <option value="comercio">Comércio</option>
-                      <option value="escola">Escola</option>
-                      <option value="governo">Governo</option>
+                      <option value="show">Show</option>
+                      <option value="beneficente">Beneficente</option>
+                      <option value="estudantil">Estudantil</option>
+                      <option value="outro">Outro</option>
                     </select>
                     <br>
                     <input type="submit" value="Enviar post">

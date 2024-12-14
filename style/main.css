@@ -78,13 +78,13 @@ main {
 .noticiasSection, .comunidadeSection {
     flex: 1;
 }
-.noticiasSection header, .comunidadeSection header {
+.noticiasSection header, .comunidadeSection header, .historiasHeader {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 60%;
 }
-.noticiasSection header img {
+.noticiasSection header img, .historiasHeader img {
     width: 100%;
 }
 .noticiasSection header p {
@@ -145,7 +145,7 @@ main {
 
 .middleSeparator div {
     width: 2px;
-    height: 120vh;
+    height: 150vh;
     margin: auto;
     border-radius: 2px;
     background-color: #3906063a;
@@ -272,6 +272,10 @@ main {
 }
 #escolasTag {
     background-color: #1a629c88;
+}
+
+.historiasHeader {
+    margin-bottom: 30px;
 }
 
 
