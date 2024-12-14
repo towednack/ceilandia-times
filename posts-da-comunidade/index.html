@@ -12,7 +12,16 @@
     <header>
         
         <div class="headerMenu">
-            <img src="../media/Hamburger Menu.png" alt="Abrir menu do site">
+            <img src="../media/Hamburger Menu.png" alt="Abrir menu do site" onclick="sideMenuShowHide('show')">
+            <div id="hamburgerMenu" onclick="sideMenuShowHide('hide')">
+                <ul>
+                    <li><a href="../noticias/">Notícias</a></li>
+                    <li><a href="../posts-da-comunidade/">Posts da Comunidade</a></li>
+                    <li><a href="../eventos/">Eventos</a></li>
+                    <li><a href="../historias-locais-e-depoimentos/">Histórias Locais e Depoimentos</a></li>
+                    <li><a href="../login/">Entrar</a></li>
+                </ul>
+            </div>
         </div>
         <div class="headerMiddle">
             <img src="../media/Header.png" alt="Cabeçalho da página" onclick="location.href='../'">

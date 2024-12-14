@@ -59,3 +59,12 @@ function passwordShowHide(passwordShowHideButtonNumber) {
         passwordShowHideElementID.type = "password";
     }
 }
+
+function sideMenuShowHide(showHide) {
+    if (showHide == 'show') {
+        document.getElementById('hamburgerMenu').style.display = 'block'
+    }
+    else {
+        document.getElementById('hamburgerMenu').style.display = 'none'
+    }
+}

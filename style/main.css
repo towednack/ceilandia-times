@@ -39,6 +39,7 @@ header {
     text-align: center;
 }
 header .userMenu, header .headerMenu {
+    position: relative;
     cursor: pointer;
     margin-bottom: 50px;
     flex: 1;
@@ -63,6 +64,33 @@ header .userMenu, header .headerMenu {
 }
 .headerSlogan {
     color: #390606;
+}
+
+#hamburgerMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    padding-top: 10px;
+    padding-right: 30px;
+    font-family: 'OldNewspaperTypesRegular';
+    background-color: #30221c;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+}
+#hamburgerMenu ul {
+    list-style: none;
+}
+#hamburgerMenu ul li {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+#hamburgerMenu ul li a {
+    padding: 6px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #714d3f;
 }
 
 main {
