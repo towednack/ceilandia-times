@@ -791,14 +791,16 @@ input[type=password], #senha1, #senha2 {
         margin-bottom: 50px;
         padding: 8px;
         padding-bottom: 20px;
+        font-family: 'OldNewspaperTypesRegular';
         flex-direction: row;
         border-radius: 0 0 30px 30px;
-        background-color: #171E38;
+        background-color: none transparent;
     }
     .chooseLoginRegister p {
         margin: 50px 0 20px 0;
+        
         font-size: 25px;
-        color: #fff;
+        color: #000;
     }
     .chooseLoginRegister button {
         display: block;
@@ -806,10 +808,14 @@ input[type=password], #senha1, #senha2 {
         height: 49px;
         margin: 5px auto;
         border-radius: 4px;
-        font-size: 22px;
+        font-size: 18px;
         text-align: center !important;
-        background-color: #737DA0;
-        color: white;
+        font-family: 'OldNewspaperTypesRegular';
+        background-color: #522624;
+        color: #fff;
         border: none;
+    }
+    .formMainLabels {
+        display: none;
     }
 }
